@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Counter from './components/counter'
 
 ReactDOM.render(
-  <React.StrictMode> 
+  <React.StrictMode > 
     <Counter />
   </React.StrictMode>,
   document.getElementById('root')

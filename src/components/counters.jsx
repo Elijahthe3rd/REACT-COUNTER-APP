@@ -8,7 +8,7 @@ class counters extends Component {
     render() { 
          
         return (
-        <div>
+        <div className='m-2'>
             <div className='container-fluid'>
                 <span className={this.getTagBadges()}>Count: {this.formatCount()}</span>
                 <button onClick={this.decrementCount} className={this.decrementBagde()}>-</button>
@@ -43,8 +43,9 @@ class counters extends Component {
     }
     
     decrementBagde=()=>{
-        let btnClasses='border border-info btn m-1 text-danger rounded-pill btn-light btn-sm'
-        return btnClasses
+        let cnt=this.state.counter
+        let btnClasses='border btn-sm btn m-1 rounded-pill border-info  '
+        return cnt<=-1? btnClasses+='btn-danger text-warning':btnClasses+='btn-light text-dark'
     }
     incrementBagde=()=>{
         let cnt=this.state.counter

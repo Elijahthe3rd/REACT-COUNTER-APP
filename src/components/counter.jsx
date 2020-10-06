@@ -13,9 +13,9 @@ class counter1 extends Component {
     }
     render() { 
     return (
-    <div> 
-         <header className={this.headerStyle()}>
-            <div>Heading</div>
+    <div className='bg-dark'> 
+         <header className={this.headerStyle()+' p-2'}>
+            <div>REACT-COUNTER-APP</div>
         </header>
         <div>
             {this.state.comps.map(count=>(
